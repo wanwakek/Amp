@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html dir='ltr' lang='en-US'>
+
+<head>
+
+<meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+
+<meta charset='utf-8' />
+
+<title>Recent Label</title>
+
+<style>
+
+@font-face {font-family: 'Nunito Sans';font-style: normal;font-weight: 400;font-display: swap;src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v5/pe0qMImSLYBIv1o4X1M8cfe5.woff) format('woff'), url(https://fonts.gstatic.com/s/nunitosans/v5/pe0qMImSLYBIv1o4X1M8cce9I9s.woff2) format('woff2')}
+
+@font-face {font-family: 'Nunito Sans';font-style: normal;font-weight: 700;font-display: swap;src: local('Nunito Sans Bold'), local('NunitoSans-Bold'), url(https://fonts.gstatic.com/s/nunitosans/v5/pe03MImSLYBIv1o4X1M8cc8GBv5p.woff) format('woff'), url(https://fonts.gstatic.com/s/nunitosans/v5/pe03MImSLYBIv1o4X1M8cc8GBs5tU1E.woff2) format('woff2')}
+
+.posttitle h2{margin:50px 0 25px 10px;font-size:15px}
+
+.posttitle ul li{font-weight:700;font-family:Nunito Sans;color:#000;width:100%}
+
+.posttitle{counter-reset:posttitle-count;padding-top:15px;padding:0;margin:0}
+
+.posttitle li{margin-bottom:10px;margin-left:-30px;display:flex;flex-grow:1;width:100%;font-size:95%;border-bottom:1px solid #ddd;padding-bottom:10px;text-decoration: none; }
+
+.posttitle li:before{flex-shrink:0;content:'0' counter(posttitle-count);counter-increment:posttitle-count;width:45px;font-weight:700;font-size:26px;font-family:Nunito Sans;color:rgba(0,0,0,.15);}
+
+.posttitle a{margin-top:3px;color:inherit;overflow:hidden;color:inherit;text-decoration: none; }
+
+.body{width:100%;height:auto}
+
+</style>
+
+</head>
+
+<body>
+
+<div class='posttitle'>
+
+<script>/*<![CDATA[*/
+
+function showrecentposts(json){for(var i=0;i<numposts;i++){var entry=json.feed.entry[i];var posttitle=entry.title.$t;var posturl;if(i==json.feed.entry.length)break;for(var k=0;k<entry.link.length;k++){if(entry.link[k].rel=='alternate'){posturl=entry.link[k].href;break}}posttitle=posttitle.link(posturl);if(standardstyling)document.write('<li>');document.write(posttitle)}if(standardstyling)document.write('</li>')} /*]]>*/</script>
+
+<ul>
+
+<script>/*<![CDATA[*/ var numposts = 7;var standardstyling = true;/*]]>*/</script>
+
+<script type="text/javascript" src="https://otomologi.blogspot.com/feeds/posts/default?orderby=published&amp;alt=json-in-script&amp;callback=showrecentposts"></script>
+
+</ul>
+
+</div>
+
+<div class='posttitle'>
+
+<h2>INTERNET</h2>
+
+<ul>
+
+<script type="text/javascript" src="https://otomologi.blogspot.com/feeds/posts/default?orderby=published&amp;alt=json-in-script&amp;callback=showrecentposts"></script>
+
+</ul>
+
+</div>
+
+<div class='posttitle'>
+
+<h2>TEMPLATE</h2>
+
+<ul>
+
+<script type="text/javascript" src="https://otomologi.blogspot.com/feeds/posts/default?orderby=published&amp;alt=json-in-script&amp;callback=showrecentposts"></script>
+
+</ul>
+
+</div>
+
+</body>
+
+</html>
