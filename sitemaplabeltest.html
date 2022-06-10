@@ -4,15 +4,24 @@
 <meta charset="utf-8"> 
 <title>Sitemap</title> 
 <meta content='width=device-width, initial-scale=1' name='viewport'> 
- <style>
- #feed-container{background:#fff;display:block;clear:both;margin:0;padding:0;list-style:none;overflow:hidden;position:relative;border-top:none}
-#feed-container li{list-style:none;margin:0;padding:0;border-top:1px solid #eee;color:#555;width:auto;float:left;display:inline}
+<style>
+#feed-container,#feed-container li{list-style:none;margin:0;padding:0}
+#table-outer{padding:7px 10px;margin:0 auto}
+#table-outer table{width:auto;margin:0 auto}
+#table-outer form{font:inherit}
+#table-outer label{display:block;text-align:right;margin:0 10px 0 0;padding:4px 0 0}
+#table-outer select[disabled]{opacity:.4}
+#post-searcher{display:block;margin:0;padding:0}
+#table-outer input,#table-outer select{width:100%;border:1px solid #dedede;border-radius:5px;margin:0;padding:5px;font-family:Roboto,sans-serif!important;font-size:16px!important;font-weight:500!important;text-transform:capitalize!important;outline:0;color:#333!important;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+#table-outer select option{min-height:1.4em!important}#table-outer input#feed-q{padding:5px 10px!important}
+#feed-container{background:#fff;display:block;clear:both;overflow:hidden;position:relative;border-top:none}
+#feed-container li{border-bottom:1px solid #ddd;color:#555;width:100%;float:left;display:inline;margin-bottom:10px;clear:both;}
 #feed-container li .inner{margin:15px 0;height:auto;overflow:hidden;word-wrap:break-word;text-overflow:ellipsis}
-#feed-container li a{text-decoration:none;color:#2C2C2C;font-weight:500}
+#feed-container li a{text-decoration:none;color:#000;font-weight:800;line-height:1.3em;}
 #feed-container li a:hover{text-decoration:none;color:#E94141}
 #feed-container li .news-text{margin-top:5px;line-height:1.3em!important}
-#feed-container li img{margin:0 15px 5px 0;padding:7px 7px 7px 0;float:left;display:block;}
-#result-desc{margin:0;padding:0;}
+#feed-container li img{margin:0 15px 5px 0;padding:7px 7px 7px 0;float:left;display:block}
+#result-desc{margin:0;padding:0}
 #result-desc div,#result-desc span{display:block;margin:0;padding:5px 0 7px;color:#D64D52}
 #result-desc div{color:inherit}
 #feed-nav{margin:10px 0 30px;text-align:center;font-weight:500}
@@ -25,9 +34,18 @@
 #feed-container,#table-outer{margin:0 auto}
 #feed-container li .inner{margin:5px auto;height:auto}
 #feedContainer li{float:none;display:block;width:auto;height:auto}
-#feed-container li .news-text,#feedContainer:after,#feed-container li img{display:none!important}
+#feed-container li .news-text,#feedContainer:after{display:none!important}
+#feed-container li img{width:100px;height:56px}
 }
- </style>
+  
+  @media (max-width:480px){
+#feed-container li img{width:70px;height:39px}
+}
+
+  
+  
+.post-body{min-height:300px;background:url(https://lh6.googleusercontent.com/-UKClHRpzskg/VfOm1eLfT7I/AAAAAAAAiQw/1pwwhEsT49I/w220-h19-no/ajax-loader%2B%25281%2529.gif) 50% 50% no-repeat!important}
+</style>
 </head> 
 <body> 
 
